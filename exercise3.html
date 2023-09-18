@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn-onclick" data-color="red">Button 1</button>
+    <button class="btn-onclick" data-color="blue">Button 2</button>
+    <button class="btn-onclick" data-color="green">Button 3</button>
+
+    <script>
+        const btns = document.querySelectorAll('.btn-onclick');
+        
+        btns.forEach(button => button.addEventListener('click', () => {
+            color = button.getAttribute('data-color');
+
+            changeBackgroundColor(color);
+        }));
+
+        function changeBackgroundColor(colorInput) {
+            const color = colorInput;
+
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

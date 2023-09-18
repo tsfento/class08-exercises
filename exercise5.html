@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInput" />
+    <p id="textDisplay"></p>
+
+    <script>
+        const keyLogger = document.querySelector('#textInput');
+        const textDisplay = document.querySelector('#textDisplay');
+
+        function logAllTheKeys() {
+            textDisplay.innerText = '';
+            textDisplay.innerText += keyLogger.value;
+        }
+
+        keyLogger.addEventListener('input', logAllTheKeys);
+    </script>
+</body>
+</html>

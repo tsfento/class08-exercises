@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn btn-inline" onclick="changeBackground()">Change Color</button>
+    
+    <script>
+        function changeBackground() {
+            const colorArr = ['red', 'blue', 'green'];
+            let randomIndex = Math.floor(Math.random() * 3);
+
+            console.log(colorArr[randomIndex]);
+            console.log(randomIndex);
+
+            document.body.style.backgroundColor = colorArr[randomIndex];
+        }
+    </script>
+</body>
+</html>

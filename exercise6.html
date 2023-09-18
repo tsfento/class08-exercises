@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="itemList"></ul>
+    
+    <script>
+        const items = [
+            {name: 'Item 1'},
+            {name: 'Item 2'},
+            {name: 'Item 3'},
+            {name: 'Item 4'}
+        ];
+
+        const itemList = document.querySelector('#itemList');
+
+        for (let i = 0; i < items.length; i++) {
+            const li = document.createElement('li');
+
+            li.innerText = items[i].name;
+
+            itemList.appendChild(li);
+        }
+    </script>
+</body>
+</html>
