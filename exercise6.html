@@ -19,17 +19,17 @@
 
         const itemList = document.querySelector('#itemList');
 
-        for (let i = 0; i < items.length; i++) {
+        items.forEach((item) => {
             const li = document.createElement('li');
 
-            li.innerText = items[i].name;
+            li.innerText = item.name;
 
-            if (i % 2) {
+            if (document.querySelectorAll('#itemList li').length % 2) {
                 li.style.backgroundColor = 'gray';
             }
 
             itemList.appendChild(li);
-        }
+        });
     </script>
 </body>
 </html>
