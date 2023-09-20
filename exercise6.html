@@ -24,6 +24,10 @@
 
             li.innerText = items[i].name;
 
+            if (i % 2) {
+                li.style.backgroundColor = 'gray';
+            }
+
             itemList.appendChild(li);
         }
     </script>
