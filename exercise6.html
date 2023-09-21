@@ -24,7 +24,7 @@
 
             li.innerText = item.name;
 
-            if (document.querySelectorAll('#itemList li').length % 2) {
+            if ((document.querySelectorAll('#itemList li').length + 1) % 2 === 0) {
                 li.style.backgroundColor = 'gray';
             }
 
